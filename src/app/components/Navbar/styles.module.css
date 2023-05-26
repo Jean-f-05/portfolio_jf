@@ -1,0 +1,22 @@
+.navbar{
+    padding: 1.4rem;
+    background-color: #123C73;
+    display: block;
+    position: sticky;
+    top:0px;
+    width: 100%;
+    z-index: 30;
+    border-bottom: 3px solid #fff;
+    height: 7.4rem;
+}
+    
+.navbar__ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__a{
+    font-size: 2.4rem;
+    color:#F7EDE7;  
+}
