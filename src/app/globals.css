@@ -2,24 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-};
+}
 
 html {
   font-size: 62.5%;
   overflow-x: hidden; 
   scroll-behavior: smooth !important;
-  background-color: red;
-};
+}
 
 body {
   background-color: #FFF;
   height: 2840px;
-  background-color: yellow;
-};
+ }
 
 p, a{  
   cursor: pointer;
-};
+}
 
 a {
 text-decoration: none;
