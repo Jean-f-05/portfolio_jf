@@ -38,23 +38,3 @@ a{
 li {
   list-style-type: none;
 }
-
-/* .Typewriter{
-    & span {
-    font-size: 2.4rem;
-    color: #123C73;
-    line-height: 1.5;
-    font-weight: 800;
-   
-    @media (max-width: 370px) {
-    font-size: 2rem;
-  } 
-    & 
-      span {
-      color:#D2042D;
-    }
-  
-    }
-  }
- 
- */
