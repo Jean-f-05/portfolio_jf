@@ -1,0 +1,15 @@
+.Typewriter__wrapper{
+  font-size: 2.4rem;
+  color: #123C73;
+  line-height: 1.5;
+  font-weight: 800; 
+}
+.Typewriter__wrapper > span{
+  color: #D2042D
+  }
+ 
+@media (max-width: 370px) {
+  .Typewriter__wrapper{
+    font-size: 2rem;
+  }
+  }

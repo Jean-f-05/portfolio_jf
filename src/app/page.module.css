@@ -1,0 +1,35 @@
+.main{
+  background-color: #F7EDE7;
+  overflow-x: hidden;
+}
+
+.hero__section {
+  background-color: #F7EDE7;
+  overflow-x: hidden;
+  height: 41rem;
+  position: relative;
+}
+
+.typewriter__wrapper{
+  width: 50%;
+  padding: 2rem;
+}
+
+.hero__header{
+  font-size: 2.4rem;
+  padding: 3rem 0 0 3rem;
+  color: #123C73;
+}
+
+.hero__header > span {
+  color:#D2042D;
+}
+
+.hero__image{
+  position: absolute;
+  bottom: 0;
+  right: -100px !important;
+  left: unset !important;
+  clip-path: polygon(40% 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 22% 77%, 39% 60%);
+}
+
