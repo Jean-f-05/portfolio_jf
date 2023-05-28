@@ -12,4 +12,9 @@
   .Typewriter__wrapper{
     font-size: 2rem;
   }
-  }
+}
+
+.Typewriter__cursor{
+ font-size: 2rem;
+  color: #123C73;
+}

@@ -6,7 +6,8 @@ const TypeWriter = () => {
     return (
         <Typewriter
             options={{
-                wrapperClassName: styles.Typewriter__wrapper
+                wrapperClassName: styles.Typewriter__wrapper,
+                cursorClassName: styles.Typewriter__cursor
             }}
             onInit={(typewriter) => {
                 typewriter
