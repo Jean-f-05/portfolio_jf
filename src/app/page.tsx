@@ -5,6 +5,7 @@ import TypeWriter from './components/Typewriter'
 import SectionHeader from './components/SectionHeader'
 import Wrapper from './components/UI/Wrapper'
 import Carousel from './components/Carousel'
+import icons from './mocks/stackmock'
 
 const Home = () => {
   return (
@@ -26,7 +27,24 @@ const Home = () => {
           </Wrapper>
           <Carousel />
         </section>
-      </main>
+
+        <section id='stack' className={styles.stack__section}>
+          <Wrapper>
+
+            <SectionHeader text="The Stack<span>...</span>" color="blue" />
+            <ul className={styles.stack__list}>
+              {icons.map(iconItem => {
+                const { Icon, size, color } = iconItem
+                return (
+                  <li key={color} className={styles.stack__element}>
+                    <Icon size={size} color={color} />
+                  </li>
+                )
+              })}
+            </ul>
+          </Wrapper>
+        </section>
+      </main >
     </>
   )
 }
