@@ -1,6 +1,7 @@
 .main{
   background-color: #F7EDE7;
   overflow-x: hidden;
+  margin-top: 7.4rem;
 }
 
 .hero__section {
@@ -33,3 +34,11 @@
   clip-path: polygon(40% 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 22% 77%, 39% 60%);
 }
 
+.whoami{
+  background-image: url("/layer.png");
+}
+
+.section__paragraph{
+    font-size: 1.8rem;
+    color:#F7EDE7;
+}
