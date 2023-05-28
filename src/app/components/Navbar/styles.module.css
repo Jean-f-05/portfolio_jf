@@ -2,7 +2,7 @@
     padding: 1.4rem;
     background-color: #123C73;
     display: block;
-    position: sticky;
+    position: fixed;
     top:0px;
     width: 100%;
     z-index: 30;
