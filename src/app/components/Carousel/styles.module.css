@@ -1,0 +1,6 @@
+.thumb__image{
+    max-width: 26rem;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+
