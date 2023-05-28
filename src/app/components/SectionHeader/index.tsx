@@ -11,7 +11,7 @@ export type SectionHeaderProps = {
 const SectionHeader = ({ text, align = "left", color = "white" }: SectionHeaderProps) => {
     return (
         <h3
-            className={`${styles.header} `}
+            className={`${styles.header} ${color === 'white' ? styles.white : styles.blue}`}
             dangerouslySetInnerHTML={{ __html: text }}></h3 >
     )
 }
