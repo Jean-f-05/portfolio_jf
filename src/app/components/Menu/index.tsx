@@ -23,18 +23,23 @@ const Menu = ({ isOpen, setMenu }: MenuProps) => {
             >
                 <ul className={styles.menu__ulist}>
                     <li>
-                        <a href="#whoami" className={styles.menu__anchor} onClick={() => setMenu(false)}>
-                            Who am I <span>?</span>
-                        </a>
-                    </li>
-                    <li>
                         <a href="#stack" className={styles.menu__anchor} onClick={() => setMenu(false)}>
                             The stack <span>...</span>
                         </a>
                     </li>
                     <li>
+                        <a href="#whoami" className={styles.menu__anchor} onClick={() => setMenu(false)}>
+                            Who am I <span>?</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#portfolio" className={styles.menu__anchor} onClick={() => setMenu(false)}>
                             My Portfolio <span>!</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" className={styles.menu__anchor} onClick={() => setMenu(false)}>
+                            Contact
                         </a>
                     </li>
                 </ul>
