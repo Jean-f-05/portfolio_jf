@@ -7,7 +7,7 @@ import Wrapper from './components/UI/Wrapper'
 import Carousel from './components/Carousel'
 import icons from './mocks/stackmock'
 import ProjectElement from './components/ProjectElement'
-import ContactMe from './components/ContactMe'
+import Footer from './components/Footer'
 
 const Home = () => {
   return (
@@ -20,7 +20,6 @@ const Home = () => {
           </div>
           <Image src={"/hero.webp"} alt='Corto Maltese character, full body, rough sea background, gray blue sky, watercolor painting' height={400} width={400} className={styles.hero__image} priority />
         </section>
-        <ContactMe />
         <section id='whoami' className={styles.whoami}>
           <Wrapper>
             <SectionHeader text="Who am I <span> ? </span>" align='right' />
@@ -69,6 +68,7 @@ const Home = () => {
           </Wrapper>
         </section>
       </main >
+      <Footer />
     </>
   )
 }
