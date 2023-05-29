@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <footer className={styles.footer__wrapper}>
+        <footer className={styles.footer__wrapper} id='contact'>
             <Wrapper>
                 <SectionHeader text='Contact'></SectionHeader>
                 <ul className={styles.footer__list}>
