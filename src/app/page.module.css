@@ -36,6 +36,8 @@
 
 .whoami{
   background-image: url("/layer.png");
+  padding-bottom: 5rem;
+  scroll-margin-top: 7.4rem;
 }
 
 .section__paragraph{
@@ -54,7 +56,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position:bottom;
-   scroll-margin-block-end: 200px ;
+    scroll-margin-top: 7.4rem;
 }
 
 .stack__list{
@@ -76,6 +78,7 @@
 .portfolio__section{
   background-image: url("/bgpattern.png");
   background-repeat: repeat;
+  scroll-margin-top: 7.4rem;
 }
 
 .portfolio__container{
