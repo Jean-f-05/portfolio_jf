@@ -7,6 +7,7 @@ import Wrapper from './components/UI/Wrapper'
 import Carousel from './components/Carousel'
 import icons from './mocks/stackmock'
 import ProjectElement from './components/ProjectElement'
+import ContactMe from './components/ContactMe'
 
 const Home = () => {
   return (
@@ -17,8 +18,9 @@ const Home = () => {
           <div className={styles.typewriter__wrapper}>
             <TypeWriter />
           </div>
-          <Image src={"/hero.webp"} alt='Corto Maltese character, full body, rough sea background, gray blue sky, watercolor painting' height={400} width={400} className={styles.hero__image} />
+          <Image src={"/hero.webp"} alt='Corto Maltese character, full body, rough sea background, gray blue sky, watercolor painting' height={400} width={400} className={styles.hero__image} priority />
         </section>
+        <ContactMe />
         <section id='whoami' className={styles.whoami}>
           <Wrapper>
             <SectionHeader text="Who am I <span> ? </span>" align='right' />
@@ -28,16 +30,14 @@ const Home = () => {
           </Wrapper>
           <Carousel />
         </section>
-
         <section id='stack' className={styles.stack__section}>
           <Wrapper>
-
             <SectionHeader text="The Stack<span>...</span>" color="blue" />
             <ul className={styles.stack__list}>
               {icons.map(iconItem => {
-                const { Icon, size, color } = iconItem
+                const { Icon, size, color, id } = iconItem
                 return (
-                  <li key={color} className={styles.stack__element}>
+                  <li key={id} className={styles.stack__element}>
                     <Icon size={size} color={color} />
                   </li>
                 )
@@ -45,10 +45,8 @@ const Home = () => {
             </ul>
           </Wrapper>
         </section>
-
         <section id="portfolio" className={styles.portfolio__section}>
           <Wrapper>
-
             <SectionHeader text='My Portfolio <span> !</span>' color='blue' />
             <div className={styles.portfolio__container}>
               <ProjectElement
@@ -59,20 +57,17 @@ const Home = () => {
                 linkRef="https://stellular-pasca-997184.netlify.app/"
                 stickers={["React", "Styled Components", "Html5"]}
               />
-
               <ProjectElement
                 type={'Landing Page'}
                 image={{ alt: "A snippet of the top part of the portfolio landing page", url: "/dogo.webp" }}
                 name="My portfolio"
                 description='Latest version of my portfolio. Your are already there...'
                 linkRef="https://stellular-pasca-997184.netlify.app/"
-                stickers={["NextJS", "Typescript", "Styled Components"]}
+                stickers={["NextJS", "Typescript", "Css3"]}
               />
             </div>
           </Wrapper>
         </section>
-
-
       </main >
     </>
   )
