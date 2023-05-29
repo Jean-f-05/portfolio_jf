@@ -72,3 +72,41 @@
 .stack__element svg{      
   
 }
+
+.portfolio__section{
+  background-image: url("/bgpattern.png");
+  background-repeat: repeat;
+}
+
+.portfolio__container{
+  max-width: 100rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+@media (max-width: 68.75em) {
+  .portfolio__container{
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 80rem;
+  }
+}
+
+@media (max-width: 48.12em) {
+  .portfolio__container{
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 60rem;
+}
+}
+
+@media (max-width: 31.25em) {
+  .portfolio__container{
+    grid-template-columns: 1fr;
+    max-width: 30rem;
+  }
+}

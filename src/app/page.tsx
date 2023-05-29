@@ -6,6 +6,7 @@ import SectionHeader from './components/SectionHeader'
 import Wrapper from './components/UI/Wrapper'
 import Carousel from './components/Carousel'
 import icons from './mocks/stackmock'
+import ProjectElement from './components/ProjectElement'
 
 const Home = () => {
   return (
@@ -44,6 +45,34 @@ const Home = () => {
             </ul>
           </Wrapper>
         </section>
+
+        <section id="portfolio" className={styles.portfolio__section}>
+          <Wrapper>
+
+            <SectionHeader text='My Portfolio <span> !</span>' color='blue' />
+            <div className={styles.portfolio__container}>
+              <ProjectElement
+                type={'Web App'}
+                image={{ alt: "A snippet of the top part of a pokedex webpage", url: "/dogo.webp" }}
+                name="Pokedex"
+                description='My version of the pokedex. React, Axios (RESTful API), state management, styled components'
+                linkRef="https://stellular-pasca-997184.netlify.app/"
+                stickers={["React", "Styled Components", "Html5"]}
+              />
+
+              <ProjectElement
+                type={'Landing Page'}
+                image={{ alt: "A snippet of the top part of the portfolio landing page", url: "/dogo.webp" }}
+                name="My portfolio"
+                description='Latest version of my portfolio. Your are already there...'
+                linkRef="https://stellular-pasca-997184.netlify.app/"
+                stickers={["NextJS", "Typescript", "Styled Components"]}
+              />
+            </div>
+          </Wrapper>
+        </section>
+
+
       </main >
     </>
   )
