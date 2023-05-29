@@ -2,65 +2,69 @@ import {  FaHtml5, FaCss3Alt, FaNodeJs } from 'react-icons/fa';
 import {  TbBrandNextjs } from 'react-icons/tb';
 import { SiMysql, SiStyledcomponents, SiJest, SiJavascript, SiTypescript, SiReact } from 'react-icons/si'
 
+const color= '#07182e'
+const size = 50
+
 const icons = [
     {
         Icon:SiReact,
-        size:85,
-        color: '#ADD8E6',
+        size:size,
+        color: color,
         id:"React"
     }, 
-    {
-        Icon:FaHtml5,
-        size:85,
-        color:'#FF5733',
-        id:"Html"
-    },
+    
     {
         Icon:FaCss3Alt,
-        size:85,
-        color: '#6082B6',
+        size:size,
+        color: color,
         id:"Css"
     },
     {
         Icon:FaNodeJs,
-        size:85,
-        color:'#478778',
+        size:size,
+        color: color,
         id:"Node"
     },
     {
-        Icon:SiTypescript,
-        size:85,
-        color: '#6082B6',
-        id:"Typescript"
-    },
-    {
         Icon:SiJavascript,
-        size:85,
-        color:'#FFD700',
+        size:size,
+        color: color,
         id:"Javascript"
     },
     {
         Icon:TbBrandNextjs,
-        size:85,
-        color:'#353935',
+        size:size,
+        color: color,
         id:"Next"
     },
     {
+        Icon:FaHtml5,
+        size:size,
+        color: color,
+        id:"Html"
+    },
+    {
         Icon:SiMysql,
-        size:85,
-        color:'#6F8FAF',
+        size:size,
+        color: color,
         id:"Mysql"
     },
     {
         Icon:SiStyledcomponents,
-        size:85,
-        color:'#353935',
+        size:size,
+        color: color,
         id:"Styledcomponents"
     },
     {
+        Icon:SiTypescript,
+        size:size,
+        color: color,
+        id:"Typescript"
+    },
+    {
         Icon:SiJest,
-        size:85,
-        color:'#A95C68',
+        size:size,
+        color: color,
         id:"jest"
     }
 ]
