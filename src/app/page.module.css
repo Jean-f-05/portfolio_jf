@@ -71,10 +71,6 @@
   z-index: 15;
 }
 
-.stack__element svg{      
-  
-}
-
 .portfolio__section{
   background-image: url("/bgpattern.png");
   background-repeat: repeat;
