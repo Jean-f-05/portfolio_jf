@@ -8,6 +8,8 @@ import Carousel from './components/Carousel'
 import icons from './mocks/stackmock'
 import ProjectElement from './components/ProjectElement'
 import Footer from './components/Footer'
+import whoami from './mocks/mockwhoami'
+import CarouselIcons from './components/CarouselIcons'
 
 const Home = () => {
   return (
@@ -20,6 +22,11 @@ const Home = () => {
           </div>
           <Image src={"/hero.webp"} alt='Corto Maltese character, full body, rough sea background, gray blue sky, watercolor painting' height={400} width={400} className={styles.hero__image} priority />
         </section>
+
+        <section id='stack' className={styles.stack__section}>
+          <CarouselIcons />
+        </section>
+
         <section id='whoami' className={styles.whoami}>
           <Wrapper>
             <SectionHeader text="Who am I <span> ? </span>" align='right' />
@@ -27,23 +34,9 @@ const Home = () => {
               Check the carousel below to know more about me<span> .</span>
             </p>
           </Wrapper>
-          <Carousel />
+          <Carousel data={whoami} />
         </section>
-        <section id='stack' className={styles.stack__section}>
-          <Wrapper>
-            <SectionHeader text="The Stack<span>...</span>" color="blue" />
-            <ul className={styles.stack__list}>
-              {icons.map(iconItem => {
-                const { Icon, size, color, id } = iconItem
-                return (
-                  <li key={id} className={styles.stack__element}>
-                    <Icon size={size} color={color} />
-                  </li>
-                )
-              })}
-            </ul>
-          </Wrapper>
-        </section>
+
         <section id="portfolio" className={styles.portfolio__section}>
           <Wrapper>
             <SectionHeader text='My Portfolio <span> !</span>' color='blue' />
