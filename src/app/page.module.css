@@ -1,11 +1,11 @@
 .main{
-  background-color: #F7EDE7;
+  background-color: var(--white);
   overflow-x: hidden;
   margin-top: 7.4rem;
 }
 
 .hero__section {
-  background-color: #F7EDE7;
+  background-color: var(--white);
   overflow-x: hidden;
   height: 41rem;
   position: relative;
@@ -19,11 +19,11 @@
 .hero__header{
   font-size: 2.4rem;
   padding: 3rem 0 0 3rem;
-  color: #123C73;
+  color: var(--blue)
 }
 
 .hero__header > span {
-  color:#D2042D;
+  color: var(--red);
 }
 
 .hero__image{
@@ -42,7 +42,7 @@
 
 .section__paragraph{
     font-size: 1.8rem;
-    color:#F7EDE7;
+    color:var(--white);
 }
 
 

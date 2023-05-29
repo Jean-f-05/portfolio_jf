@@ -1,21 +1,13 @@
 .header{
     font-size: 2.2rem;
-    color: #F7EDE7;
+    color: var(--white);
     text-align: left;
 }
 
 .white{
-    color: #F7EDE7;
+    color: var(--white);
 }
-
 
 .blue{
-    color: #123C73
+    color: var(--blue)
 }
-
-/* colors
-#123C73;
-#D2042D;
-#F7EDE7;
-*/
-

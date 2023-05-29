@@ -1,5 +1,5 @@
 .footer__wrapper{
-    background-color: #123C73;
+    background-color: var(--blue);
 }
 
 .footer__list{
@@ -15,7 +15,7 @@
     align-items: center;
     gap: 1rem;
     font-size: 1.5rem;
-    color:#d0d8e3;
+    color:var(--whiteb);
 }
 
 .footer__anchor{
@@ -29,12 +29,12 @@
 
 .horizontalrule {
     margin-top: 2rem;
-    border-color: #d0d8e3;;
+    border-color: var(--whiteb);
   
 }
 
 .footer__paragraph{
-    color: #d0d8e3;
+    color: var(--whiteb);
     text-align: right;
     margin-top: 1rem;
     font-size: 1.2rem;

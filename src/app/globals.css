@@ -30,7 +30,7 @@ h5,
 h6,
 a{
 & span {
-  color: #D2042D
+  color: var(--red)
   }
 }
 
