@@ -36,7 +36,7 @@
     position: relative;
 }
 
-.project__name ::before {
+.project__name::before {
     background-color: #D2042D;
     content: "";
     position: absolute;
@@ -52,6 +52,7 @@
     font-size: 1.8rem;
     line-height: 1.2;
     margin-top: 0.8rem;
+    min-height: 8.7rem;
 }
 
 .stickers__wrapper{
