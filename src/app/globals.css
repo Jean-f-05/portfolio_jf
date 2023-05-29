@@ -38,10 +38,9 @@ li {
   list-style-type: none;
 }
 
-
-/* colors
-#123C73;
-#D2042D;
-#F7EDE7;
-*/
-
+:root {
+  --red: #D2042D;
+  --blue: #123C73;
+  --white: #F7EDE7;
+  --whiteb: #d0d8e3;
+}
