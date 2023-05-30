@@ -47,11 +47,13 @@
 
 
 .stack__section{
-    background-color: #FFF;
+    background-color: var(--white);
     position: relative;
     background-color: var(--whiteb);
     scroll-margin-top: 7.4rem;
     padding: 1rem 0;
+    border-top: 3px solid var(--white);
+    border-bottom: 3px solid var(--white);
 }
 
 .stack__list{
