@@ -45,6 +45,9 @@
     color:var(--white);
 }
 
+.section__paragraph span{
+  color:var(--red);
+}
 
 .stack__section{
     background-color: var(--white);
