@@ -11,16 +11,20 @@ type dataProps = {
     width: number,
     alt: string,
     src: string,
-    style: string
+    style: string,
+    text: string
 }
 
 const Carousel = ({ data }: any) => {
     return (
         <Slider {...settings}>
             {data.map((value: dataProps) => {
-                const { alt, height, width, src, style } = value
+                const { alt, height, width, src, style, text } = value
                 return (
-                    <Image key={alt} height={height} width={width} alt={alt} src={src} className={style ? styles.thumb__image : ""} />
+                    <article key={alt} className={styles.article}>
+                        <Image height={height} width={width} alt={alt} src={src} className={style ? styles.thumb__image : ""} />
+                        <h3 className={styles.thumb__text}>{text}</h3>
+                    </article>
                 )
             })}
         </Slider>
