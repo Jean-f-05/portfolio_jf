@@ -25,7 +25,7 @@ const whoami = [
         alt: 'a watercolor painting of a gamer playing a videogame with enthusiasm',
         src:"/gamer.webp",
         style:style,
-        text: "ocasional gamer. Happy owner of a switch"
+        text: "ocasional gamer. Happy owner of a switch."
     },
     {
         height:height, 

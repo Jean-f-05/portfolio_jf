@@ -22,11 +22,9 @@ const Home = () => {
           </div>
           <Image src={"/hero.webp"} alt='Corto Maltese character, full body, rough sea background, gray blue sky, watercolor painting' height={400} width={400} className={styles.hero__image} priority />
         </section>
-
         <section id='stack' className={styles.stack__section}>
           <CarouselIcons />
         </section>
-
         <section id='whoami' className={styles.whoami}>
           <Wrapper>
             <SectionHeader text="Who am I <span> ? </span>" align='right' />
