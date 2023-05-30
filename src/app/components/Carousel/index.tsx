@@ -7,27 +7,32 @@ import Slider from "react-slick";
 import Image from 'next/image';
 
 type dataProps = {
-    height: number,
-    width: number,
+    id: string,
     alt: string,
-    src: string,
+    image: image,
     style: string,
     text: string
+}
+type image = {
+    id: string,
+    url: string
 }
 
 const Carousel = ({ data }: any) => {
     return (
-        <Slider {...settings}>
-            {data.map((value: dataProps) => {
-                const { alt, height, width, src, style, text } = value
-                return (
-                    <article key={alt} className={styles.article}>
-                        <Image height={height} width={width} alt={alt} src={src} className={style ? styles.thumb__image : ""} />
-                        <h3 className={styles.thumb__text}>{text}</h3>
-                    </article>
-                )
-            })}
-        </Slider>
+        < Slider {...settings}>
+            {
+                data.map((value: dataProps) => {
+                    const { id, alt, image, style, text } = value
+                    return (
+                        <article key={id} className={styles.article}>
+                            <Image height={250} width={250} alt={alt} src={image.url} className={style ? styles.thumb__image : ""} />
+                            <h3 className={styles.thumb__text}>{text}</h3>
+                        </article>
+                    )
+                })
+            }
+        </Slider >
     )
 }
 
