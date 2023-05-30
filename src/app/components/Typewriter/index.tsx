@@ -2,7 +2,11 @@
 import Typewriter from 'typewriter-effect';
 import styles from "./styles.module.css"
 
-const TypeWriter = () => {
+type TypeWriterProps = {
+    text: any
+}
+
+const TypeWriter = ({ text }: TypeWriterProps) => {
     return (
         <Typewriter
             options={{
@@ -11,15 +15,15 @@ const TypeWriter = () => {
             }}
             onInit={(typewriter) => {
                 typewriter
-                    .typeString('Hello there, I&apos;m Jean<span>!</span> Front-end developer<span>.</span> ')
+                    .typeString(text.firstLine)
                     .pauseFor(1000)
-                    .typeString('36 years old')
+                    .typeString(text.secondLine)
                     .pauseFor(1700)
                     .changeDeleteSpeed(0.4)
                     .deleteChars(12)
-                    .typeString('With the looks of a 25 years old<span>.</span> ')
+                    .typeString(text.thirdLine)
                     .pauseFor(1000)
-                    .typeString('Under my belt, around 3 years of experience<span>.</span>')
+                    .typeString(text.fourthLine)
                     .start();
             }}
         />)
