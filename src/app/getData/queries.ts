@@ -78,6 +78,9 @@ query MyQuery {
         text
       }
     }
+    stackIcons {
+      iconName
+    }
   }
 }
 `  
