@@ -10,56 +10,46 @@ import ProjectElement from './components/ProjectElement'
 import Footer from './components/Footer'
 import whoami from './mocks/mockwhoami'
 import CarouselIcons from './components/CarouselIcons'
+import getData from './getData'
 
-const Home = () => {
+
+
+const Home = async () => {
+  const data = await getData();
+  const values = { ...data.data.homes[0] }
+  console.log("VALUES", values)
+
   return (
     <>
-      <Navbar />
+      <Navbar title={values.title} />
       <main className={styles.main}>
         <section className={styles.hero__section}>
           <div className={styles.typewriter__wrapper}>
-            <TypeWriter />
+            <TypeWriter text={values.heroText} />
           </div>
-          <Image src={"/hero.webp"} alt='Corto Maltese character, full body, rough sea background, gray blue sky, watercolor painting' height={400} width={400} className={styles.hero__image} priority />
+          <Image src={values.heroImage.image.url} alt={values.heroImage.alt} height={400} width={400} className={styles.hero__image} priority />
         </section>
         <section id='stack' className={styles.stack__section}>
           <CarouselIcons />
         </section>
-        <section id='whoami' className={styles.whoami}>
+        <section id={values.whoamiSection.sectionRef} className={styles.whoami}>
           <Wrapper>
-            <SectionHeader text="Who am I <span> ? </span>" align='right' />
-            <p className={styles.section__paragraph}>Born in Luxembourg<span>, </span> living in Portugal<span>. </span> Because pictures are worth a thousand words<span>, </span>
-              Check the carousel below to know more about me<span> .</span>
-            </p>
+            <SectionHeader text={values.whoamiSection.text} />
+            <p className={styles.section__paragraph} dangerouslySetInnerHTML={{ __html: values.whoamiParagraph }}></p>
           </Wrapper>
-          <Carousel data={whoami} />
+          <Carousel data={values.carousel.carouselImage} />
         </section>
 
-        <section id="portfolio" className={styles.portfolio__section}>
+        <section id={values.portfolioSection.sectionRef} className={styles.portfolio__section}>
           <Wrapper>
-            <SectionHeader text='My Portfolio <span> !</span>' color='blue' />
+            <SectionHeader text={values.portfolioSection.text} color={values.portfolioSection.sectionColor} />
             <div className={styles.portfolio__container}>
-              <ProjectElement
-                type={'Web App'}
-                image={{ alt: "A snippet of the top part of a pokedex webpage", url: "/dogo.webp" }}
-                name="Pokedex"
-                description='My version of the pokedex. React, Axios (RESTful API), state management, styled components'
-                linkRef="https://stellular-pasca-997184.netlify.app/"
-                stickers={["React", "Styled Components", "Html5"]}
-              />
-              <ProjectElement
-                type={'Landing Page'}
-                image={{ alt: "A snippet of the top part of the portfolio landing page", url: "/dogo.webp" }}
-                name="My portfolio"
-                description='Latest version of my portfolio. Your are already there...'
-                linkRef="https://stellular-pasca-997184.netlify.app/"
-                stickers={["NextJS", "Typescript", "Css3"]}
-              />
+              <ProjectElement data={values.portfolioCard} />
             </div>
           </Wrapper>
         </section>
       </main >
-      <Footer />
+      <Footer data={values.footer} />
     </>
   )
 }
