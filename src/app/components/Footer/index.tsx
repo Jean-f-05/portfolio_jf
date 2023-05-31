@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 const Footer = ({ data }: any) => {
     const { footerSection, elements, copyright } = data
-    console.log(copyright)
     return (
         <footer className={styles.footer__wrapper} id={footerSection.sectionRef}>
             <Wrapper>
@@ -16,11 +15,14 @@ const Footer = ({ data }: any) => {
                         return (
                             <li className={styles.footer__element} key={el.text}>
                                 {el.href ?
-                                    (<Link href="mailto:jean_f_05@hotmail.com?subject=JF Portfolio Contact" className={styles.footer__anchor}>
-                                        {icons[el.icon]}
-                                        {el.text}
-                                    </Link>) : (
-                                        <>{icons[el.icon]}
+                                    (
+                                        <Link href="mailto:jean_f_05@hotmail.com?subject=JF Portfolio Contact" className={styles.footer__anchor}>
+                                            {icons[el.icon]}
+                                            {el.text}
+                                        </Link>
+                                    ) : (
+                                        <>
+                                            {icons[el.icon]}
                                             {el.text}
                                         </>)
                                 }

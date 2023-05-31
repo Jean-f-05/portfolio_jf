@@ -12,12 +12,9 @@ import whoami from './mocks/mockwhoami'
 import CarouselIcons from './components/CarouselIcons'
 import getData from './getData'
 
-
-
 const Home = async () => {
   const data = await getData();
   const values = { ...data.data.homes[0] }
-  console.log("VALUES", values)
 
   return (
     <>
@@ -30,7 +27,7 @@ const Home = async () => {
           <Image src={values.heroImage.image.url} alt={values.heroImage.alt} height={400} width={400} className={styles.hero__image} priority />
         </section>
         <section id='stack' className={styles.stack__section}>
-          <CarouselIcons />
+          <CarouselIcons data={values.stackIcons[0].iconName} />
         </section>
         <section id={values.whoamiSection.sectionRef} className={styles.whoami}>
           <Wrapper>

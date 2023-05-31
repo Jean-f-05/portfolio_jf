@@ -54,7 +54,8 @@
     position: relative;
     background-color: var(--whiteb);
     scroll-margin-top: 7.4rem;
-    padding: 1rem 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.1rem;
     border-top: 3px solid var(--white);
     border-bottom: 3px solid var(--white);
 }
