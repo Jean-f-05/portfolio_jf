@@ -33,11 +33,17 @@
   
 }
 
+.footer__paragraphWrapper{
+ text-align: end;
+}
+
 .footer__paragraph{
     color: var(--whiteb);
     text-align: right;
     margin-top: 1rem;
     font-size: 1.2rem;
+    display: inline;
+    ;
 }
 
 .footer__paragraph span{

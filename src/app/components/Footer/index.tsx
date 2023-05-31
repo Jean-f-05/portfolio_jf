@@ -1,37 +1,42 @@
 import SectionHeader from '../SectionHeader';
 import Wrapper from '../UI/Wrapper';
 import styles from './styles.module.css';
-import { SlPhone, SlLocationPin } from "react-icons/sl"
-import { IoMailOutline } from "react-icons/io5"
+import icons from './icons';
 import Link from 'next/link';
 
-const Footer = () => {
+const Footer = ({ data }: any) => {
+    const { footerSection, elements, copyright } = data
+    console.log(copyright)
     return (
-        <footer className={styles.footer__wrapper} id='contact'>
+        <footer className={styles.footer__wrapper} id={footerSection.sectionRef}>
             <Wrapper>
-                <SectionHeader text='Contact'></SectionHeader>
+                <SectionHeader text={footerSection.text}></SectionHeader>
                 <ul className={styles.footer__list}>
-                    <li className={styles.footer__element}>
-                        <SlPhone color='#d0d8e3' size={20} />
-                        +351 968940658
-                    </li>
-                    <li className={styles.footer__element}>
-                        <Link href="mailto:jean_f_05@hotmail.com?subject=JF Portfolio Contact" className={styles.footer__anchor}>
-                            <IoMailOutline color='#d0d8e3' size={20} />
-                            Click to email
-                        </Link>
-                    </li>
-                    <li className={styles.footer__element}>
-                        <SlLocationPin color='#d0d8e3' size={20} />
-                        Braga, Portugal
-                    </li>
+                    {elements.map((el: any) => {
+                        return (
+                            <li className={styles.footer__element} key={el.text}>
+                                {el.href ?
+                                    (<Link href="mailto:jean_f_05@hotmail.com?subject=JF Portfolio Contact" className={styles.footer__anchor}>
+                                        {icons[el.icon]}
+                                        {el.text}
+                                    </Link>) : (
+                                        <>{icons[el.icon]}
+                                            {el.text}
+                                        </>)
+                                }
+                            </li>
+                        );
+                    })}
                 </ul>
                 <hr className={styles.horizontalrule} />
-                <p className={styles.footer__paragraph}><span>&copy;</span> Copyright {new Date().getFullYear()} Developed by: Jean-Francois</p>
+                <div className={styles.footer__paragraphWrapper}>
+                    <p className={styles.footer__paragraph} dangerouslySetInnerHTML={{ __html: copyright.text }}></p>
+                    <p className={styles.footer__paragraph}> {new Date().getFullYear()}</p>
+                </div>
+
             </Wrapper>
-        </footer>
+        </footer >
     )
 }
-
 
 export default Footer;
