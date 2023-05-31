@@ -1,11 +1,10 @@
 .header{
     font-size: 2.2rem;
-    color: var(--white);
     text-align: left;
 }
 
 .white{
-    color: var(--white);
+    color: var(--whiteb);
 }
 
 .blue{

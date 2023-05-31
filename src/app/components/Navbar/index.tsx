@@ -14,7 +14,7 @@ const Navbar = ({ title }: NavBarProps) => {
     return (<>
         <nav className={styles.navbar}>
             <ul className={styles.navbar__ul}>
-                <a href={""} className={styles.navbar__a}>{title}</a>
+                <a href={"https://portfolio-jf-phi.vercel.app/"} className={styles.navbar__a}>{title}</a>
                 <div>
                     {menuOpen ? <RiCloseFill size={32} color='#F7EDE7' onClick={() => { setMenuOpen(!menuOpen) }} /> : <RiMenuUnfoldLine size={32} color='#F7EDE7' onClick={() => { setMenuOpen(!menuOpen) }} />}
                 </div>
