@@ -38,7 +38,7 @@ const Menu = ({ isOpen, setMenu }: MenuProps) => {
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" className={styles.menu__anchor} onClick={() => setMenu(false)}>
+                        <a href="#footer" className={styles.menu__anchor} onClick={() => setMenu(false)}>
                             Contact
                         </a>
                     </li>
