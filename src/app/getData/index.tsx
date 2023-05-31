@@ -13,7 +13,7 @@ const getData = async () => {
         body: JSON.stringify({
             query: GET_HOME,
         }),
-        next: { revalidate: 60 }
+        next: { revalidate: 10 }
     });
     if (!res.ok) {
         throw new Error('Failed to fetch data');
