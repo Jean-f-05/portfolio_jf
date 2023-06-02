@@ -7,12 +7,14 @@
     border: 2px solid var(--blue);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 2;
+    border-radius: 3px;
 }
 
 .project__image__wrapper{
     position: relative;
     height: 25rem;
     width: 100%;
+    border-radius: 3px;
 }
 
 .project__header{
@@ -51,7 +53,7 @@
     font-size: 1.8rem;
     line-height: 1.2;
     margin-top: 0.8rem;
-    min-height: 8.7rem;
+    min-height: 7rem;
 }
 
 .stickers__wrapper{

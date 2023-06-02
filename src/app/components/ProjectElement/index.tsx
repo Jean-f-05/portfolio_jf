@@ -4,7 +4,7 @@ import { SiGithub } from 'react-icons/si';
 import Link from 'next/link';
 
 type ProjectProps = {
-    cardtype: "Web App" | "Landing Page",
+    cardType: "Web App" | "Landing Page",
     cardName: string,
     cardDescription: string,
     cardLink: string,
@@ -31,14 +31,14 @@ const Sticker = ({ children }: StickerProps) => {
 const ProjectElement = ({ data }: any) => {
     return (
         data.map((value: ProjectProps) => {
-            const { cardImage, cardtype, cardName, cardDescription, cardLink, cardStickers } = value;
+            const { cardImage, cardType, cardName, cardDescription, cardLink, cardStickers } = value;
             return (
                 < div className={styles.project__wrapper} key={cardName}>
                     <div className={styles.project__image__wrapper}>
                         <Image alt={cardImage.alt} src={cardImage.image.url} fill />
                     </div>
                     <div className={styles.project__header}>
-                        <h5 className={styles.project__text}>{cardtype}</h5>
+                        <h5 className={styles.project__text}>{cardType}</h5>
                         <Link href={cardLink} target="_blank">
                             <SiGithub color='#fff' size={28} />
                         </Link>

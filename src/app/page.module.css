@@ -107,6 +107,6 @@
 @media (max-width: 31.25em) {
   .portfolio__container{
     grid-template-columns: 1fr;
-    max-width: 30rem;
+   
   }
 }
