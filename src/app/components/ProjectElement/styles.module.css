@@ -78,3 +78,9 @@
     font-size: 1.2rem;
     font-weight: 500;
 }
+
+@media (min-width: 68.75em) {
+    .project__wrapper{
+        height: 627px;
+    }
+  }
