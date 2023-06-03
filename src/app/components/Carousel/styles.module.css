@@ -1,16 +1,12 @@
 .article{
     position: relative;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-   
-}
-
-.thumb__image{
-    max-width: 26rem;    
+    max-width: 250px;  
 }
 
 .thumb__text{
     position: absolute;
-    width: 85%;
+    width: 100%;
     bottom: 0;
     left: 0;
     font-size: 2rem;
@@ -20,3 +16,10 @@
     text-rendering: optimizeLegibility;
     line-height: 1.2;
 }
+
+
+@media (min-width: 68.75em) {
+    .thumb__text{
+        padding: 20px 50px;
+    }
+  }

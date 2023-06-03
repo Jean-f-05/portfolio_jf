@@ -44,3 +44,15 @@ li {
   --white: #F7EDE7;
   --whiteb: #d0d8e3;
 }
+
+@media (min-width: 31.25em) {
+  html {
+    font-size: 68.75%;
+  }
+}
+
+@media (min-width: 68.75em) {
+  html {
+    font-size: 75%;
+  }
+}
