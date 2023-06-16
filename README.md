@@ -1,5 +1,6 @@
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=red)](https://portfolio-jf-phi.vercel.app/)
+To website: [https://portfolio-jf-phi.vercel.app/](https://portfolio-jf-phi.vercel.app/)
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
