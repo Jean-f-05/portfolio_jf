@@ -11,7 +11,8 @@ const TypeWriter = ({ text }: TypeWriterProps) => {
         <Typewriter
             options={{
                 wrapperClassName: styles.Typewriter__wrapper,
-                cursorClassName: styles.Typewriter__cursor
+                cursorClassName: styles.Typewriter__cursor,
+                delay: 75
             }}
             onInit={(typewriter) => {
                 typewriter
