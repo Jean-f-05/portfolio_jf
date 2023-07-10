@@ -15,7 +15,7 @@
     align-items: center;
     gap: 1rem;
     font-size: 1.5rem;
-    color:var(--whiteb);
+    color:var(--white);
 }
 
 .footer__anchor{
@@ -38,7 +38,7 @@
 }
 
 .footer__paragraph{
-    color: var(--whiteb);
+    color: var(--white);
     text-align: right;
     margin-top: 1rem;
     font-size: 1.2rem;
