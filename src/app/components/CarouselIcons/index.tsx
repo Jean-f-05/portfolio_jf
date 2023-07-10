@@ -1,21 +1,21 @@
 'use client'
-import settings from './settings';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import icons from './icons';
+import styles from "./styles.module.css";
 
 const CarouselIcons = ({ data }: any) => {
     return (
-        <Slider {...settings}>
-            {data.map((icon: any) => {
-                return (
-                    <div key={icon}>
-                        {icons[icon]}
-                    </div>
-                )
-            })}
-        </Slider >
+        <div className={styles.icons__wrapper}>
+            {
+                data.map((icon: any) => {
+                    return (
+                        <div key={icon}>
+                            {icons[icon]}
+                        </div>
+                    )
+                })
+            }
+        </div >
+
     )
 }
 

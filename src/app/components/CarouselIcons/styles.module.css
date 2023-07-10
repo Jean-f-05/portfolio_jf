@@ -1,0 +1,17 @@
+.icons__wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4rem;
+    flex-wrap: wrap;
+  
+}
+
+
+@media (max-width: 31.25em) {
+    .icons__wrapper {
+      gap: 2rem;
+      row-gap: 1.5rem;
+    }
+  }
