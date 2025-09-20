@@ -8,6 +8,14 @@ const settings = {
     arrows: false,
     responsive: [
       {
+        breakpoint: 4096,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          infinite: true,
+        }
+      },
+      {
         breakpoint: 2048,
         settings: {
           slidesToShow: 4,
